@@ -54,7 +54,7 @@ export default class New extends React.Component{
                 alert('You have not joined our server! You will be redirected to the server invite to join our server. After joining our server, try to submit the bot. This is just for verification!');
                 window.location.href = 'https://discord.gg/FrduEZd';
             }
-            else if(data.message == 'bot exists') return alert('Bot has been already registered!');
+            else if(data.message == 'bot exists') return alert('Bot has been already registerd!');
             else if(data.message == 'invalid bot') return alert('Invalid client id provided!');
             else if(data.message == 'provided bot is not a bot') return alert('Provided client id is not a bot');
             else if(data.message == 'one of dev is invalid') return alert('One of the id provided in other developers is invalid!');
@@ -72,7 +72,7 @@ export default class New extends React.Component{
 
             <div style={{ padding: '30px' }}>
                 <table style={{ width: '100%' }} className="new-box">
-                    <Entry name="Client Id" id="id" info="Your bot's client id!" placeholder="0123456789"/>
+                    <Entry name="Client Id" id="id" info="Your bot's Id" placeholder="0123456789"/>
                     <Entry name="Prefix" id="prefix" info="Your bot's prefix" placeholder="!"/>
                     <Entry name="Permissions" id="perms" info="Your bot's required permission interger!" placeholder="8"/>
                     <Entry name="Support Server" id="sserver" info="Invite of bot's support server!" placeholder="https://discord.gg/invite"/>
@@ -83,7 +83,7 @@ export default class New extends React.Component{
                     <tr className="entry" style={{ width: '100%' }}>
                         <td className="new-bot-entry-label">
                             <h3 style={{ fontWeight: 'bolder' }}>Long Description:</h3>
-                            <p>Long description of your bot! Supports markdown too...</p>
+                            <p>A Long description. Supports markdown too</p>
                         </td>
                         <td className="new-bot-entry-cover">
                             <textarea id="long-des" onKeyPress={() => this.setState({ content: document.getElementById('long-des').value })} placeholder="Something brief about yout bot!"/>
