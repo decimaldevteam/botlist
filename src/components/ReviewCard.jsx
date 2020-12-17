@@ -26,6 +26,13 @@ export default function Card({ review, id, parent }) {
                                       return <Stars checked size="12px" />;
                                   })
                                 : null}
+                            {review.stars
+                                ? Array.apply(null, {
+                                      length: 5 - review.stars,
+                                  }).map((x) => {
+                                      return <Stars size="12px" />;
+                                  })
+                                : null}
                         </div>
                         {review.user.username}{" "}
                         <span className="r-time">

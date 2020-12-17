@@ -23,6 +23,7 @@ export default class Bot extends React.Component {
             content: <h1 style={{ textAlign: "center" }}>Loading data...</h1>,
             bot: { description: { long: null } },
             reviews: [],
+            averageStars: 0,
         };
     }
 
@@ -41,8 +42,10 @@ export default class Bot extends React.Component {
         fetch(`https://botlistapi.decimaldev.xyz/bot/${this.props.id}/reviews`)
             .then((res) => res.json())
             .then((reviews) => {
-                this.setState({ reviews: reviews.reviews.reverse() });
-                this.state.reviews.averageStars = reviews.averageStars;
+                this.setState({
+                    reviews: reviews.reviews.reverse(),
+                    averageStars: reviews.averageStars,
+                });
             });
     }
 
@@ -273,12 +276,36 @@ export default class Bot extends React.Component {
                             <div>
                                 <div className="StarsSection">
                                     <h3>Average Reviews</h3>
-                                    <h2>{this.state.reviews.averageStars}/5</h2>
-                                    <StarIcon size="38px" />
-                                    <StarIcon size="38px" />
-                                    <StarIcon size="38px" />
-                                    <StarIcon size="38px" />
-                                    <StarIcon size="38px" />
+                                    <h2>
+                                        {this.state.averageStars
+                                            ? this.state.averageStars
+                                            : 0}
+                                        /5
+                                    </h2>
+                                    {this.state.averageStars
+                                        ? Array.apply(null, {
+                                              length: Math.round(
+                                                  this.state.averageStars
+                                              ),
+                                          }).map((x) => (
+                                              <StarIcon checked size="38px" />
+                                          ))
+                                        : Array.apply(null, {
+                                              length: 5,
+                                          }).map((x) => (
+                                              <StarIcon size="38px" />
+                                          ))}
+                                    {this.state.averageStars
+                                        ? Array.apply(null, {
+                                              length:
+                                                  5 -
+                                                  Math.round(
+                                                      this.state.averageStars
+                                                  ),
+                                          }).map((x) => (
+                                              <StarIcon size="38px" />
+                                          ))
+                                        : null}
                                 </div>
                                 <div className="review">
                                     <span>
