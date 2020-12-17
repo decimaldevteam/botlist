@@ -487,7 +487,9 @@ body::-webkit-scrollbar {
     border-radius: 8px;
     font-family: News Cycle;
 }
-
+#review-input textarea {
+    width: 100%;
+}
 .review-send{
     cursor: pointer;
     float: right;
@@ -512,4 +514,19 @@ body::-webkit-scrollbar {
 
 .review .badge-mini:hover{
     opacity: 1!important;
+}
+.StarsSection {
+    margin-top: 20px;
+    margin-bottom:20px
+}
+.StarsSection h2 {
+    font-weight: 600;
+    font-size: 1.7em;
+    margin-bottom: 7px;
+}
+.checked {
+    color : #7298da
+}
+.pointer-c {
+    cursor: pointer;
 }
