@@ -34,7 +34,7 @@ export default class Login extends React.Component{
             <Header/>
 
             <div className="login-section">
-                <p>You have not login yet!</p>
+                <p>You have not logged in yet!</p>
                 <a onClick={this.login.bind(this)}>Login</a>
             </div>
         </>

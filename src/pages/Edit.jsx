@@ -68,7 +68,7 @@ export default class Edit extends React.Component{
             }
         };
 
-        fetch('https://botlistapi.decimaldev.xyz/edit', { headers: { data: JSON.stringify(encodeURIComponent(data)) } })
+        fetch('https://botlistapi.decimaldev.xyz/edit', { headers: { data: encodeURIComponent(JSON.stringify(data)) } })
         .then(res => res.json(), window.alertError)
         .then(data => {
             if(data.message == 'OK'){

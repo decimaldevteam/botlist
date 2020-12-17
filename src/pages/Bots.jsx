@@ -45,9 +45,11 @@ export default class Bots extends React.Component{
                 <input id="search" placeholder="Search bots" style={{ boxShadow: 'none' }} onKeyPress={this.search.bind(this)}/>
                 <div style={{ marginTop: '10px' }}>
                     {['Anime', 'Fun', 'Economy', 'Game', 'Developer', 'Moderation'].map(x => {
-                        return <a onClick={() => {
-                            document.getElementById('search').value = `tag:${x.toLowerCase()}`
-                        }}><span className="badge-mini category-card">{x}</span></a>
+                        return <a onClick={function() {
+                            let y = x.toLowerCase();
+                            document.getElementById('search').value = `tag:${y}`;
+                            this.setState({ content: this.bots.filter(x => x.tags ? x.tags.includes(y) : false).map(x => <BotCard bot={x}/> )});
+                        }.bind(this)}><span className="badge-mini category-card">{x}</span></a>
                     })}
                 </div>
             </div>

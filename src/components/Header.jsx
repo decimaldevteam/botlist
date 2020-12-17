@@ -16,7 +16,7 @@ class Header extends React.Component{
                         />
                     </div>
                     <div className="header-links">
-                        <a href="/">Home</a>
+                        <a href="/#/">Home</a>
                         <a href="/#/bots">Bots</a>
                         {
                             window.token ?
@@ -27,6 +27,7 @@ class Header extends React.Component{
                             <a href='/#/login'>Login</a>
                         }
                         <a href="/#/terms">Terms</a>
+                        <a href="/#/discord">Discord</a>
                     </div>
                 </div>
             </div>

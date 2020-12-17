@@ -71,6 +71,7 @@ export default class App extends React.Component{
         else if(route.startsWith('edit/')) return this.setState({ content: <Edit id={route.split('/')[1]}/> });
         else if(route === 'bots') return this.setState({ content: <Bots/> });
         else if(route === 'terms') return this.setState({ content: <Tos/> });
+        else if(route === 'discord') return window.location.href = 'https://discord.gg/FrduEZd';
         else return this.setState({ content: <Home/> });
     }
 

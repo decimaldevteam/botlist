@@ -30,7 +30,7 @@ class Home extends React.Component{
 
             <div className="coverpage">
                 <h1>Decimal Botlist</h1>
-                <p>Best place to find great bots!</p>
+                <p>A place to find bots which suits your taste!</p>
             </div>
 
             <div style={{ padding: '30px' }} className="home-content">

@@ -238,6 +238,14 @@ body::-webkit-scrollbar {
     .bot-img{
         text-align: center;
     }
+
+    .bot-page .badge, .bot-page .badge-mini{
+        margin-top: 5px;
+    }
+
+    .star-rate{
+        text-align: center;
+    }
 }
 
 .bot-info p{
@@ -487,9 +495,7 @@ body::-webkit-scrollbar {
     border-radius: 8px;
     font-family: News Cycle;
 }
-#review-input textarea {
-    width: 100%;
-}
+
 .review-send{
     cursor: pointer;
     float: right;
@@ -515,18 +521,30 @@ body::-webkit-scrollbar {
 .review .badge-mini:hover{
     opacity: 1!important;
 }
-.StarsSection {
-    margin-top: 20px;
-    margin-bottom:20px
+
+.bot-des a{
+    text-decoration: none;
+    color: white;
 }
-.StarsSection h2 {
-    font-weight: 600;
-    font-size: 1.7em;
-    margin-bottom: 7px;
+
+.bot-des{
+    font-weight: lighter;
 }
-.checked {
-    color : #7298da
+
+@media (max-width: 700px){
+    .review-send{
+        width: 100%;
+    }
 }
-.pointer-c {
-    cursor: pointer;
+
+.glowing-star{
+    color: #FFA500;
+}
+
+.unglowing-star, .unstarred{
+    color: black;
+}
+
+.starred{
+    color: #FFA500;
 }
