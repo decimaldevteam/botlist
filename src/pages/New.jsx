@@ -43,7 +43,7 @@ export default class New extends React.Component{
         };
         let alertError = () => alert('Uh Oh! This either happened due to failiure of api or the api is under maintainance!');
 
-        fetch('https://botlistapi.decimaldev.xyz/submit', { headers: { data: JSON.stringify(data) } })
+        fetch('https://botlistapi.decimaldev.xyz/submit', { headers: { data: JSON.stringify(encodeURIComponent(data)) } })
         .then(res => res.json(), alertError)
         .then(data => {
             if(data.message == 'OK'){
