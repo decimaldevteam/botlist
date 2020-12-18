@@ -64,6 +64,11 @@ export default function GenerateTosPage() {
                         other servers/users for not voting for your bot.
                     </li>
                 </ul>
+                <h1>Reviewing</h1>
+                <ul>
+                    <li>You should not abuse or send overly hateful reviews.</li>
+                    <li>You should not critisize others.</li>
+                    <li>Reviews should be based on your own honest opionions and you should add fake reviews.</li>
                 <h1>Decimal Development Team Rights</h1>
                 <ul>
                     <li>
