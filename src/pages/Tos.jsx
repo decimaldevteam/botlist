@@ -69,6 +69,7 @@ export default function GenerateTosPage() {
                     <li>You should not abuse or send overly hateful reviews.</li>
                     <li>You should not critisize others.</li>
                     <li>Reviews should be based on your own honest opionions and you should add fake reviews.</li>
+                </ul>
                 <h1>Decimal Development Team Rights</h1>
                 <ul>
                     <li>
