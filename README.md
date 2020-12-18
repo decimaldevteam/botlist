@@ -3,7 +3,8 @@
 A very basic and simple open source botlist which is made with react and uses a private api which is hosted seperately!
 
 **Website:** https://botlist.decimaldev.xyz<br/>
-**Developers:** @abh80, @Scientific-Guy
+**Developers:** @abh80, @Scientific-Guy<br/>
+**Discord Server:** https://discord.gg/FrduEZd
 
 # Features
 
@@ -13,7 +14,11 @@ A very basic and simple open source botlist which is made with react and uses a 
 
 ## Online Submission
 
-![Online Submission](https://i.imgur.com/abkSQ7d.png)
+![Submission](https://i.imgur.com/YXrD6tM.png)
+
+## Account Managment
+
+![Accounts](https://i.imgur.com/abkSQ7d.png)
 
 ## Upvote and rating system
 
