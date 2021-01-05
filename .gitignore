@@ -1,3 +1,9 @@
-node_modules/
+# Packaging files
 package-lock.json
-api/
+node_modules/
+
+# Next files
+.next/
+
+# Old files
+old-components/
