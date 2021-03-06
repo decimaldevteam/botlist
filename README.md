@@ -1,12 +1,10 @@
+# Important
+
+This code is not for use, this code has many useless points, so this botlist is no more in use! You can fork if you want. We have created a new botlist instead: https://listcord.xyz! 
+
 # Decimal Botlist
 
 A very basic and simple open source botlist which is made with next.js and uses a private api which is hosted seperately!
-
-> This project uses a private api rather than using it in next.js api/ folder is because to handle cache and prevent memory leak in the main website!
-
-**Website:** https://botlist.decimaldev.xyz<br/>
-**Developers:** [@abh80](https://github.com/abh80), [@Scientific-Guy](https://github.com/Scientific-Guy)<br/>
-**Discord Server:** https://discord.gg/FrduEZd
 
 # Features
 
